@@ -1,0 +1,25 @@
+/* GLOBAL VARIABLES */
+:root {
+  --navbar-bg: black;
+  --navbar-text-color: white; 
+}
+
+/* NAVIGATION */
+.custom-navbar {
+  /* background: var(--navbar-bg); */
+  align-items: flex-end !important;
+}
+
+.custom-navbar__logo {
+  width: 45px;
+}
+
+.custom-nav__link {
+  color: var(--navbar-text-color);
+}
+
+.custom-navbar__menu {
+  background-color: var(--navbar-text-color);
+  align-self: center;
+}
+
