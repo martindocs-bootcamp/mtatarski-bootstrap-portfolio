@@ -23,3 +23,10 @@
   align-self: center;
 }
 
+/* HERO */
+.custom-header {
+  background-image: url("../images/1.jpg");
+  background-position: 60% 40%;
+  background-repeat: no-repeat; 
+}
+
