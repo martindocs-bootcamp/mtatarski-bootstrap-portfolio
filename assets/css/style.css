@@ -1,3 +1,6 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+
 /* GLOBAL VARIABLES */
 :root {
   --navbar-menu-bg: #293241;
@@ -20,6 +23,12 @@
 
   --color-white: #ffffff;
   --color-black: #000000;  
+}
+
+/* GENERAL */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
 /* NAVIGATION */
@@ -66,14 +75,36 @@
 }
 
 /* HERO */
+.custom-header__center{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.custom-header__center p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 .custom-header {
   background-image: url("../images/hero-bg.jpg");
-  background-position: 60% 37%;
+  background-position: 60% 35%;
   background-repeat: no-repeat; 
+  background-size: cover;
   box-shadow: 0 1px 5px .1px var(--navbar-menu-bg);
+  height: calc(100vh - 71px);  
+}
+
+.custom-header p {
+  font-weight: 600;
 }
 
 /* WORK */
+.work {
+  padding-top: 50px;
+}
 .card {
   border: 1px solid var(--navbar-hover-bars);
 }
@@ -88,6 +119,8 @@
 
 .custom-title-header {
   margin: 0;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .custom-work-img {
@@ -169,9 +202,17 @@
 .aboutme {
   margin-top: 50px;
 }
+
 .custom-aboutme-body {
   padding-top: 0;
 }
+
+.custom-title-aboutme,
+.custom-title-skills {  
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .aboutme-img {
   border-radius: 100%;
   height: 250px;
@@ -196,6 +237,7 @@
 .social {
   padding: 30px 10px;
 }
+
 .social img {
   width: 40px;
   height: 40px;
@@ -212,9 +254,11 @@
 .social-linkedin {
   border: 2px solid var(--social-linkedin);
 }
+
 .social-twitter {
   border: 2px solid var(--social-twitter);
 }
+
 .social-github {
   border: 2px solid var(--social-github);
 }
@@ -229,9 +273,9 @@
 @media (max-width: 768px) {
   /* hero background */
   .custom-header {
-    background-position: 50% 30%;
+    background-position: 50% 35%;
   }
-
+ 
   /* work */
   .custom-work-body {
     padding: 20px;     
@@ -259,11 +303,5 @@
   /* contact */
   .contact {
     margin-top: 150px;
-  }
-}
-
-@media (max-width: 320px) {
-  .custom-header {
-    background-position: 50% -15%;
   }
 }
