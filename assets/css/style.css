@@ -1,10 +1,17 @@
 /* GLOBAL VARIABLES */
 :root {
-  --navbar-bg: black;
-  --navbar-text-color: white; 
+  --navbar-bg: #000000;
+  --navbar-text-color: #ffffff; 
   --stack-html: #e34f26;
   --stack-css: #1572B7;
   --stack-js: #c4c429; 
+  --social-github: #000000;
+  --social-linkedin: #0077B5;
+  --social-twitter: #08a0e9;
+  --social-box-shadow: #82d9fc;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
 
 /* NAVIGATION */
@@ -122,13 +129,51 @@
   height: 250px;
   width: 250px;
   object-fit: cover;
-  border: 1px solid black;
+  border: 1px solid var(--color-black);
 }
 
 .aboutme-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* SOCIALS */
+.contact {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.social {
+  padding: 30px 10px;
+}
+.social img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-white);
+  margin: 0 5px;
+}
+
+.social img:hover {
+  cursor: pointer;
+  box-shadow: 0 1.5px 5px .10px var(--social-box-shadow);
+}
+
+.social-linkedin {
+  border: 2px solid var(--social-linkedin);
+}
+.social-twitter {
+  border: 2px solid var(--social-twitter);
+}
+.social-github {
+  border: 2px solid var(--social-github);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  color: var(--color-white);  
 }
 
 /* MEDIA QUERIES */
@@ -155,5 +200,10 @@
   .custom-aboutme-body h2,
   .custom-aboutme-body h3{
     text-align: center;
+  }
+
+  /* contact */
+  .contact {
+    margin-top: 150px;
   }
 }
