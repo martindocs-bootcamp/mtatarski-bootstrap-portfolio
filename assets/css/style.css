@@ -1,14 +1,18 @@
 /* GLOBAL VARIABLES */
 :root {
-  --navbar-bg: #000000;
   --navbar-text-color: #ffffff; 
+
   --stack-html: #e34f26;
   --stack-css: #1572B7;
   --stack-js: #c4c429; 
+
   --social-github: #000000;
   --social-linkedin: #0077B5;
   --social-twitter: #08a0e9;
   --social-box-shadow: #82d9fc;
+
+  --navbar-hover-bars: #c0c0c0;
+  --navbar-hover-links: #9b9b9b;
 
   --color-white: #ffffff;
   --color-black: #000000;
@@ -19,17 +23,38 @@
   align-items: flex-end !important;
 }
 
+.custom-navbar > *:not(.custom-navbar__logo) {
+  padding-left: 12px;  
+}
+
 .custom-navbar__logo {
   width: 45px;
+  margin: 5px 20px 5px 10px ;
 }
 
 .custom-nav__link {
   color: var(--navbar-text-color);
 }
 
+.custom-nav__link:focus, .custom-nav__link:hover {
+  color: var(--navbar-hover-links);
+}
+
 .custom-navbar__menu {
-  background-color: var(--navbar-text-color);
+  border: none;  
   align-self: center;
+}
+
+.custom-navbar__menu:focus {
+  box-shadow: none;
+}
+
+.custom-navbar__bars {
+  color: var(--color-white);  
+}
+
+.custom-navbar__bars:hover {
+  color: var(--navbar-hover-bars);
 }
 
 /* HERO */
