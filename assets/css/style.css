@@ -21,6 +21,8 @@
   --work-hover-btn: #6f96da;
   --work-hover-color-text: #293241;
 
+  --footer-bg: #1d232e;
+
   --color-white: #ffffff;
   --color-black: #000000;  
 }
@@ -232,6 +234,7 @@ body {
 .contact {
   margin-top: 100px;
   text-align: center;
+  background: var(--footer-bg);
 }
 
 .social {
@@ -242,31 +245,36 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--color-white);
   margin: 0 5px;
+}
+
+.social a{
+  text-decoration: none;  
+}
+
+.social-linkedin {
+  filter: brightness(0) invert(100%);  
+}
+
+.social-twitter {
+  border: 2px solid var(--social-twitter); 
+  filter: brightness(0) invert(100%);  
+}
+
+.social-github {
+  filter: invert(100%);
 }
 
 .social img:hover {
   cursor: pointer;
-  box-shadow: 0 1.5px 5px .10px var(--social-box-shadow);
-}
-
-.social-linkedin {
-  border: 2px solid var(--social-linkedin);
-}
-
-.social-twitter {
-  border: 2px solid var(--social-twitter);
-}
-
-.social-github {
-  border: 2px solid var(--social-github);
+  box-shadow: 0 1.5px 5px .10px var(--color-black);
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
   color: var(--color-white);  
+  background: var(--footer-bg);
 }
 
 /* MEDIA QUERIES */
