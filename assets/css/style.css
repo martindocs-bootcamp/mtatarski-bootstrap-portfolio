@@ -14,9 +14,12 @@
 
   --navbar-bars: #98c1d9;
   --navbar-hover-bars: #6c94ac;
+  --work-btn: #5b7bb4;
+  --work-hover-btn: #6f96da;
+  --work-hover-color-text: #293241;
 
   --color-white: #ffffff;
-  --color-black: #000000;
+  --color-black: #000000;  
 }
 
 /* NAVIGATION */
@@ -67,11 +70,14 @@
   background-image: url("../images/hero-bg.jpg");
   background-position: 60% 37%;
   background-repeat: no-repeat; 
-  border-bottom: 1px solid var(--navbar-menu-bg);
-  box-shadow: 0 1px 1px 1px var(--navbar-menu-bg);
+  box-shadow: 0 1px 5px .1px var(--navbar-menu-bg);
 }
 
 /* WORK */
+.card {
+  border: 1px solid var(--navbar-hover-bars);
+}
+
 .custom-work-container,
 .custom-aboutme-container {
   display: flex;
@@ -85,8 +91,10 @@
 }
 
 .custom-work-img {
+  display: inline-block;
   height: 100%;
   object-fit: cover;
+  border: 1px solid var(--navbar-hover-bars);
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -114,6 +122,14 @@
 .custom-work-btn a{
   min-width: 150px;
   margin: 0 10px 10px 0;
+  background: var(--work-btn);  
+  border: 1px solid var(--navbar-bars);
+  color: var(--color-white);
+}
+
+.custom-work-btn a:hover {  
+  color:  var(--work-hover-color-text);
+  background: var(--work-hover-btn);
 }
 
 .stack-used {
