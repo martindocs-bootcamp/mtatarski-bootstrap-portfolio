@@ -6,20 +6,26 @@
   --navbar-menu-bg: #293241;
   --navbar-text-color: #ffffff; 
 
+  --navbar-bars: #98c1d9;
+  --navbar-hover-bars: #6c94ac;
+
+  --hero-text-bg: 245, 228, 212;
+
+  --work-btn: #5b7bb4;
+  --work-hover-btn: #6f96da;
+  --work-hover-color-text: #293241;
+
   --stack-html: #e34f26;
   --stack-css: #1572B7;
   --stack-js: #c4c429; 
 
+  --about-btn: #237c23;
+  --about-hover-btn: #30a830;
+
   --social-github: #000000;
   --social-linkedin: #0077B5;
   --social-twitter: #08a0e9;
-  --social-box-shadow: #82d9fc;
-
-  --navbar-bars: #98c1d9;
-  --navbar-hover-bars: #6c94ac;
-  --work-btn: #5b7bb4;
-  --work-hover-btn: #6f96da;
-  --work-hover-color-text: #293241;
+  --social-box-shadow: #82d9fc;  
 
   --footer-bg: #1d232e;
 
@@ -96,11 +102,13 @@ body {
   background-repeat: no-repeat; 
   background-size: cover;
   box-shadow: 0 1px 5px .1px var(--navbar-menu-bg);
-  height: calc(100vh - 71px);  
 }
 
 .custom-header p {
-  font-weight: 600;
+  font-weight: 600;  
+  background: rgba(var(--hero-text-bg), 0.15);
+  border-radius: 5px;
+  padding: 15px;  
 }
 
 /* WORK */
@@ -158,7 +166,7 @@ body {
   padding-left: 5px;
 }
 
-.custom-work-btn a{
+.custom-work-btn a {
   min-width: 150px;
   margin: 0 10px 10px 0;
   background: var(--work-btn);  
@@ -230,8 +238,21 @@ body {
 
 .aboutme-img-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+
+.aboutme-img-container a{
+  min-width: 150px;
+  margin: 20px 0 0 0;
+  background: var(--about-btn);  
+  border: 1px solid rgb(35, 124, 35);
+  color: var(--color-white);
+}
+
+.aboutme-img-container a:hover {  
+  color:  var(--work-hover-color-text);
+  background: var(--about-hover-btn);
 }
 
 /* SOCIALS */
