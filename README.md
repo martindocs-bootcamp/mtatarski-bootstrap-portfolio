@@ -25,7 +25,7 @@ To access and view my portfolio website, you can follow these simple steps:
 
 1. Open a web browser.
 
-2. Navigate to the following URL: https://martindocs.github.io/mtatarski-bootstrap-portfolio/
+2. Navigate to the following URL: https://martindocs-bootcamp.github.io/mtatarski-bootstrap-portfolio/
 
 3. Explore the various sections, including 'Work', 'About Me', and 'Contact Me', to learn more about my skills and projects.
 
